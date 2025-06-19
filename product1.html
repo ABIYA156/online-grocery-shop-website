@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits - Product Details</title>
+    <style>
+        /* General body styling */
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/display-apples-other-fruits-grocery-store_398492-6480.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* Header styling */
+        header {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Product details section */
+        .product-details {
+            background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+            color: #333;
+            margin: 50px auto;
+            padding: 30px;
+            width: 60%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .product-details h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #006400;
+        }
+
+        .product-details ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-details li {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+        }
+
+        /* Button styling */
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #006400; /* Dark green button */
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #228B22; /* Lighter green on hover */
+        }
+
+        .btn-cart {
+            display: inline-block;
+            padding: 8px 20px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #ff4500; /* Orange button */
+            text-decoration: none;
+            border-radius: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .btn-cart:hover {
+            background-color: #ff6347; /* Lighter orange on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+   </head>
+<body>
+    <header>
+        <h1>Fresh Fruits</h1>
+        <p>Discover our selection of Fresh Fruits.</p>
+    </header>
+
+    <section class="product-details">
+        <h2>Available Fresh Fruits</h2>
+        <ul>
+            <li>
+                Apple - Rps. 80/kg 
+                <button class="btn-cart" onclick="addToCart('Apple', 80)">Add to Cart</button>
+            </li>
+            <li>
+                Orange - Rps. 70/kg 
+                <button class="btn-cart" onclick="addToCart('Orange', 70)">Add to Cart</button>
+            </li>
+            <li>
+                Bananas - Rps. 200/kg 
+                <button class="btn-cart" onclick="addToCart('Bananas', 200)">Add to Cart</button>
+            </li>
+            <li>
+                Litchi - Rps. 90/kg 
+                <button class="btn-cart" onclick="addToCart('Litchi', 90)">Add to Cart</button>
+            </li>
+        </ul>
+        <a href="products.html" class="btn-primary">Back to Grocery items</a>
+        <a href="cart.html" class="btn-primary">Go to Cart</a>
+
+    </section>
+<script>
+    // Function to add an item to the cart with price
+    function addToCart(productName, price) {
+        // Get the current cart from localStorage (or create a new array if it doesn't exist)
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Check if the product is already in the cart
+        const existingProduct = cart.find(item => item.name === productName);
+        if (existingProduct) {
+            // If the product exists, increase the quantity
+            existingProduct.quantity += 1;
+        } else {
+            // If not, add the product to the cart
+            cart.push({ name: productName, price: price, quantity: 1 });
+        }
+
+        // Save the updated cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        // Optionally, show a message that the item was added
+        alert(`${productName} has been added to your cart!`);
+    }
+</script>
+
+    <?php include 'footer.php'; ?>
+</body>
+</html>

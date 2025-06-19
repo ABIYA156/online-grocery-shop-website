@@ -1,0 +1,150 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('https://static.vecteezy.com/system/resources/previews/001/925/571/non_2x/online-shopping-store-on-website-and-mobile-phone-design-smart-business-marketing-concept-horizontal-view-illustration-vector.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire page */
+    color: #333; /* Darker text color for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full viewport height */
+}
+
+/* Header */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #f8f8f8; /* Light text color */
+    padding: 10px 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #f8f8f8; /* Light text color */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: #f8f8f8; /* Light text color */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.nav-list a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 4px;
+}
+
+.nav-link-cart {
+    padding: 10px 20px; /* Extra padding for Cart link */
+}
+
+/* Products section */
+.products {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center and margin for spacing */
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products-header h2 {
+    font-size: 36px;
+    color: #333; /* Dark text color */
+}
+
+.products-header p {
+    font-size: 18px;
+    color: #666; /* Medium text color */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff; /* White background for product cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #e74c3c; /* Red color for prices */
+}
+
+.btn-primary {
+    background-color: #3498db; /* Blue background for buttons */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer */
+footer.footer {
+    background-color: #333; /* Dark background for footer */
+    color: #f8f8f8; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}

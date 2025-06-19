@@ -1,0 +1,207 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('https://www.bigbasketco.com/wp-content/uploads/Good-l-corp-best-shopping-carts-smaller-stores.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire page */
+    color: #333; /* Darker text color for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full viewport height */
+}
+
+/* Header */
+header {
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent dark background for header */
+    color: #f8f8f8; /* Light text color */
+    padding: 10px 0;
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #f8f8f8; /* Light text color */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: #f8f8f8; /* Light text color */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.nav-list a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 4px;
+}
+
+.nav-link-cart {
+    padding: 10px 20px; /* Extra padding for Cart link */
+}
+
+/* Cart section */
+.cart {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.cart-header h2 {
+    font-size: 36px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for item cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.item-details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.item-details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item-details .price {
+    font-size: 18px;
+    color: #e74c3c; /* Red color for prices */
+}
+
+.quantity {
+    margin-top: 10px;
+}
+
+.quantity label {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.item-total {
+    font-size: 18px;
+    color: #333;
+    margin-right: 15px;
+}
+
+.remove-item {
+    background-color: #e74c3c; /* Red background for remove button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;       
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.remove-item:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.cart-summary {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+.cart-summary p {
+    font-size: 20px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    background-color: #3498db; /* Blue background for checkout button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer */
+footer.footer {
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent dark background for footer */
+    color: #f8f8f8; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+                              

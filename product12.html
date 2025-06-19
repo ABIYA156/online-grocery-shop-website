@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks - Product Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.pexels.com/photos/298217/pexels-photo-298217.jpeg?cs=srgb&dl=pexels-leigh-patrick-14477-298217.jpg&fm=.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffcc00; /* Bright yellow snack theme */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ff5722; /* Bright snack-related orange */
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ffeb3b; /* Soft yellow color */
+        }
+
+        /* Product Section Styles */
+        .product-details {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product-details h2 {
+            font-size: 2.5em;
+            color: #e65100; /* Dark orange to match snack theme */
+            margin-bottom: 20px;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            padding: 15px 0;
+            font-size: 1.4em;
+            color: #795548; /* Chocolate brown */
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #ff9800; /* Bright orange button */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffcc00; /* Yellow on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ff5722; /* Orange footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-details {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p, .product-details li {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Snacks</h1>
+        <p>A selection of crunchy, savory, and sweet snacks</p>
+    </header>
+
+    <section class="product-details">
+        <h2>Available Snacks</h2>
+        <ul>
+            <li>Puffs - Rps. 50/kg</li>
+            <li>Sandwich - Rps. 60/kg</li>
+            <li>Waffles - Rps. 80/kg</li>
+            <li>Ice Creams - Rps. 100/packet</li>
+        </ul>
+        <a href="products.html" class="btn-primary">Back to Grocery Items</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Snack Haven</p>
+    </footer>
+
+</body>
+</html>

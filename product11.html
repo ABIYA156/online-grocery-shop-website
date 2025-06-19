@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Bars - Product Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://img.freepik.com/premium-photo/lots-different-chocolates-as-background-top-view_517510-9.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #3e2723; /* Dark chocolate brown */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ffd180; /* Light caramel color */
+        }
+
+        /* Product Section Styles */
+        .product-details {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 30px;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product-details h2 {
+            font-size: 2.5em;
+            color: #8d6e63; /* Lighter chocolate brown */
+            margin-bottom: 20px;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            padding: 15px 0;
+            font-size: 1.4em;
+            color: #4e342e; /* Chocolate brown */
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #5d4037; /* Dark chocolate button */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #8d6e63; /* Lighter brown on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-details {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p, .product-details li {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chocolate Bars</h1>
+        <p>Indulge in our selection of delicious chocolate bars.</p>
+    </header>
+
+    <section class="product-details">
+        <h2>Available Chocolate Bars</h2>
+        <ul>
+            <li>Dairy Milk - Rps. 50</li>
+            <li>Kit Kat - Rps. 60</li>
+            <li>Milky Bar - Rps. 80</li>
+            <li>Five Star - Rps. 100</li>
+        </ul>
+        <a href="products.html" class="btn-primary">Back to Grocery items</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Store</p>
+    </footer>
+</body>
+</html>

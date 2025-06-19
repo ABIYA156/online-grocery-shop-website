@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240327/pngtree-supermarket-aisle-with-empty-shopping-cart-at-grocery-store-retail-business-image_15646096.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        .cart-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.95); /* White background with more transparency */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        tr:hover {
+            background-color: rgba(76, 175, 80, 0.1); /* Light green hover effect */
+        }
+
+        .empty-message {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 20px;
+            color: #777;
+        }
+
+        .cart-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff6347; /* Tomato color */
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4500; /* Darker hover effect */
+        }
+    </style>
+</head>
+<body>
+
+<div class="cart-container">
+    <h1>Your Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- Cart items will be injected here -->
+        </tbody>
+    </table>
+    <div id="empty-message" class="empty-message" style="display: none;">
+        Your cart is empty.
+    </div>
+    <div class="cart-actions">
+        <a href="products.html" class="btn">Continue Shopping</a>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    </div>
+</div>
+
+<script>
+    // Function to load the cart items from localStorage
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsContainer = document.getElementById('cart-items');
+        const emptyMessage = document.getElementById('empty-message');
+
+        // Clear existing items
+        cartItemsContainer.innerHTML = '';
+
+        if (cart.length === 0) {
+            emptyMessage.style.display = 'block';  // Show empty cart message
+        } else {
+            emptyMessage.style.display = 'none';  // Hide empty cart message
+
+            // Loop through each item and display it
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.quantity}</td>
+                `;
+                cartItemsContainer.appendChild(row);
+            });
+        }
+    }
+
+    // Load the cart when the page is loaded
+    window.onload = loadCart;
+</script>
+
+</body>
+</html>

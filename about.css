@@ -1,0 +1,118 @@
+/* General styling */
+body {
+background-image: url('path-to-your-image.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.top-nav .logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.top-nav .nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.top-nav .nav-list li {
+    margin-left: 20px;
+}
+
+.top-nav .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.team-section {
+    margin-bottom: 50px;
+}
+
+.team-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.team-members .member {
+    text-align: center;
+}
+
+.team-members img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-members h4 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.team-members p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.mission-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 1rem;
+}

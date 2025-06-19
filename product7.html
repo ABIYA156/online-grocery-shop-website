@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items - Product Details</title>
+    <style>
+        /* Global body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.littlehouseliving.com/wp-content/uploads/2022/08/grocerieshorizontal.jpg'); /* Replace with an appropriate background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(34, 193, 195, 0.85); /* Vibrant semi-transparent color */
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Product details section */
+        .product-details {
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            width: 60%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-details h2 {
+            color: #22C1C3; /* Matching the header color */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .product-details ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.4em;
+            margin: 0;
+        }
+
+        .product-details li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Button styling */
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            background-color: #22C1C3; /* Vibrant blue */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #30D5D6; /* Lighter on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(34, 193, 195, 0.85);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grocery Items</h1>
+        <p>Essential grocery items for daily needs.</p>
+    </header>
+
+    <section class="product-details">
+        <h2>Available Grocery Items</h2>
+        <ul>
+            <li>Nutella - Rps. 50/kg</li>
+            <li>Jam - Rps. 60/kg</li>
+            <li>Biscuits - Rps. 80/kg</li>
+            <li>Health Mix - Rps. 100/packet</li>
+        </ul>
+        <a href="products.html" class="btn-primary">Back to Grocery items</a>
+    </section>
+
+    <?php include 'footer.php'; ?>
+</body>
+</html>

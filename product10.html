@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products - Product Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://i.pinimg.com/736x/c2/86/11/c28611ec482bfe5bf8d7224e1a556564.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(255, 102, 178, 0.9); /* Soft pink color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        /* Product Section Styles */
+        .product-details {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 30px;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product-details h2 {
+            font-size: 2.5em;
+            color: #ff66b2;
+            margin-bottom: 20px;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-details li {
+            padding: 15px 0;
+            font-size: 1.4em;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #ff66b2; /* Soft pink button */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff80bf; /* Lighter pink on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(255, 102, 178, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-details {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p, .product-details li {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Beauty Products</h1>
+        <p>Essential beauty products for your daily needs.</p>
+    </header>
+
+    <section class="product-details">
+        <h2>Available Beauty Products</h2>
+        <ul>
+            <li>Foundation - Rps. 50/kg</li>
+            <li>Concealer - Rps. 60/kg</li>
+            <li>Blush - Rps. 80/kg</li>
+            <li>Lipstick/Lip Gloss - Rps. 100/packet</li>
+        </ul>
+        <a href="products.html" class="btn-primary">Back to Grocery items</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beauty Store</p>
+    </footer>
+</body>
+</html>
